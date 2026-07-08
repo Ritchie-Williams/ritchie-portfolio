@@ -1,28 +1,54 @@
+import Card from "./Card";
 import Container from "./Container";
+import FadeIn from "./FadeIn";
 import Section from "./Section";
+import SectionHeader from "./SectionHeader";
+
+const aboutCards = [
+    {
+        title: "Engineer",
+        description:
+            "I enjoy solving technical problems through automation, infrastructure, and thoughtful system design.",
+    },
+    {
+        title: "Cloud Journey",
+        description:
+            "I am building toward cloud engineering by strengthening my skills in Azure, development, automation, and modern infrastructure.",
+    },
+    {
+        title: "Continuous Growth",
+        description:
+            "I learn best by building, documenting, testing, and improving real solutions over time.",
+    },
+];
 
 function About() {
     return (
-        <Section className="bg-slate-900">
-            <Container>
-                <div className="max-w-3xl">
-                    <p className="text-sm font-semibold uppercase tracking-widest text-blue-400">
-                        About Me
-                    </p>
+        <FadeIn>
+            <Section className="bg-slate-900">
+                <Container>
+                    <SectionHeader
+                        eyebrow="About"
+                        title="A systems-focused technologist building toward cloud engineering."
+                        description="This platform documents my growth, technical work, and learning journey as I continue expanding from IT systems support into cloud infrastructure and engineering."
+                    />
 
-                    <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
-                        Building a path from IT systems support into cloud engineering.
-                    </h2>
+                    <div className="mt-12 grid gap-6 md:grid-cols-3">
+                        {aboutCards.map((card) => (
+                            <Card key={card.title}>
+                                <h3 className="text-xl font-semibold text-white">
+                                    {card.title}
+                                </h3>
 
-                    <p className="mt-6 text-lg leading-8 text-slate-300">
-                        I am Ritchie Williams, a Computer Systems Analyst focused on
-                        infrastructure, automation, Microsoft cloud technologies, and
-                        continuous technical growth. This platform documents my journey,
-                        current projects, achievements, and the technologies I am learning.
-                    </p>
-                </div>
-            </Container>
-        </Section>
+                                <p className="mt-4 text-base leading-7 text-slate-300">
+                                    {card.description}
+                                </p>
+                            </Card>
+                        ))}
+                    </div>
+                </Container>
+            </Section>
+        </FadeIn>
     );
 }
 

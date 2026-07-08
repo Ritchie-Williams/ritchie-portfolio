@@ -4,13 +4,14 @@ import TypingText from "./TypingText";
 
 function Hero() {
     return (
-        <section className="min-h-screen bg-slate-950 flex items-center pt-16">
+        <section className="flex min-h-screen items-center bg-slate-950 pt-16">
             <Container>
                 <div className="mx-auto flex max-w-4xl flex-col items-center justify-center text-center">
+
                     <img
                         src="/project-columbus-logo.png"
-                        alt="Ritchie Williams logo"
-                        className="mb-8 h-24 w-24 rounded-xl bg-white object-contain p-2"
+                        alt="Ritchie Williams Logo"
+                        className="mb-8 h-24 w-24 object-contain"
                     />
 
                     <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-blue-400">
@@ -28,15 +29,28 @@ function Hero() {
                     </h2>
 
                     <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                        I build, automate, troubleshoot, and document technical solutions
-                        while growing deeper into cloud engineering, infrastructure, and
-                        modern development practices.
+                        Building cloud solutions, automating infrastructure, and documenting
+                        my engineering journey as I work toward becoming a Cloud Engineer.
                     </p>
 
                     <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                        <Button>Explore My Journey</Button>
-                        <Button variant="secondary">View Resume</Button>
+
+                        <a href="#about">
+                            <Button>Explore My Journey</Button>
+                        </a>
+
+                        <a
+                            href="/resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Button variant="secondary">
+                                View Resume
+                            </Button>
+                        </a>
+
                     </div>
+
                 </div>
             </Container>
         </section>
