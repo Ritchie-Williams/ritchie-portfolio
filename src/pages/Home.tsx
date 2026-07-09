@@ -7,18 +7,9 @@ function Home() {
     return (
         <>
             <Hero />
-
-            <div id="about">
-                <About />
-            </div>
-
-            <div id="skills">
-                <Skills />
-            </div>
-
-            <div id="projects">
-                <Projects />
-            </div>
+            <About />
+            <Skills />
+            <Projects />
         </>
     );
 }

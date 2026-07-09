@@ -1,3 +1,5 @@
+import { skillGroups } from "../data/skills";
+
 import Badge from "./Badge";
 import Card from "./Card";
 import Container from "./Container";
@@ -5,29 +7,10 @@ import FadeIn from "./FadeIn";
 import Section from "./Section";
 import SectionHeader from "./SectionHeader";
 
-const skillGroups = [
-    {
-        title: "Cloud & Microsoft",
-        skills: ["Azure", "Microsoft 365", "Entra ID", "SharePoint"],
-    },
-    {
-        title: "Automation & Endpoint",
-        skills: ["PowerShell","Bash", "NinjaOne", "Windows Administration", "Device Imaging"],
-    },
-    {
-        title: "Development",
-        skills: ["React", "TypeScript", "Tailwind CSS", "C++", "Python", "Git"],
-    },
-    {
-        title: "Infrastructure",
-        skills: ["Networking", "Linux", "Virtual Machines", "Troubleshooting"],
-    },
-];
-
 function Skills() {
     return (
         <FadeIn>
-            <Section className="bg-slate-950">
+            <Section id="skills" className="bg-slate-950">
                 <Container>
                     <SectionHeader
                         eyebrow="Skills"

@@ -1,31 +1,15 @@
+import { aboutCards } from "../data/about";
+
 import Card from "./Card";
 import Container from "./Container";
 import FadeIn from "./FadeIn";
 import Section from "./Section";
 import SectionHeader from "./SectionHeader";
 
-const aboutCards = [
-    {
-        title: "Engineer",
-        description:
-            "I enjoy solving technical problems through automation, infrastructure, and thoughtful system design.",
-    },
-    {
-        title: "Cloud Journey",
-        description:
-            "I am building toward cloud engineering by strengthening my skills in Azure, development, automation, and modern infrastructure.",
-    },
-    {
-        title: "Continuous Growth",
-        description:
-            "I learn best by building, documenting, testing, and improving real solutions over time.",
-    },
-];
-
 function About() {
     return (
         <FadeIn>
-            <Section className="bg-slate-900">
+            <Section id="about" className="bg-slate-900">
                 <Container>
                     <SectionHeader
                         eyebrow="About"

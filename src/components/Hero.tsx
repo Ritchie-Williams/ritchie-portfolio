@@ -29,8 +29,7 @@ function Hero() {
                     </h2>
 
                     <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                        Building cloud solutions, automating infrastructure, and documenting
-                        my engineering journey as I work toward becoming a Cloud Engineer.
+                        I enjoy solving technical problems through automation, thoughtful system design, and continuous learning. This platform documents the projects, technologies, and experiences shaping my journey toward cloud engineering
                     </p>
 
                     <div className="mt-10 flex flex-col gap-4 sm:flex-row">
